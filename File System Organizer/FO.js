@@ -127,27 +127,27 @@ function getCategory(FileName) {
 }
 
 function sendFiles(srcFilePath , dest , fileCategory){
-  // we will create path for each category type encountered to create folders of their names
-  let catPath = path.join(dest , fileCategory)
+    // we will create path for each category type encountered to create folders of their names
+    let catPath = path.join(dest , fileCategory)
 
-  //D:\FJP4\test folder\organized_files\media
-  //D:\FJP4 \test folder\organized_files\documents
+    //C:\Users\neel\Desktop\FileOrganizer\testfolder\organized_files\media
+    //C:\Users\neel\Desktop\FileOrganizer\testfolder\organized_files\documents
 
-  if(fs.existsSync(catPath)==false){
-    fs.mkdirSync(catPath)
-  }
+    if(fs.existsSync(catPath)==false){
+      fs.mkdirSync(catPath)
+    }
 
-  let fileName = path.basename(srcFilePath)
+    let fileName = path.basename(srcFilePath)
 
-  // we took out the basename of all the files
+    // we took out the basename of all the files
 
-  let destFilePath = path.join(catPath , fileName)
+    let destFilePath = path.join(catPath , fileName)
 
 
-  fs.copyFileSync(srcFilePath , destFilePath)
+    fs.copyFileSync(srcFilePath , destFilePath)
 
-  fs.unlinkSync(srcFilePath)
+    fs.unlinkSync(srcFilePath)
 
-  console.log('Files Organized')
+    console.log('Files Organized')
 
 }

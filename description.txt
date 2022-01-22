@@ -1,0 +1,8 @@
+node modules use -> fs, path
+technologies used ->node.js , javascript language
+
+copy test folder path ->right click + copy path
+open in terminal FO.js and run command
+node FO.js 'C:\Users\neel\Desktop\FileOrganizer\testfolder'
+it will be organized
+
