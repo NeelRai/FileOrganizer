@@ -6,3 +6,4 @@ open in terminal FO.js and run command
 node FO.js 'C:\Users\neel\Desktop\FileOrganizer\testfolder'
 it will be organized
 
+Left -> Tree folder structure implemented       modular
